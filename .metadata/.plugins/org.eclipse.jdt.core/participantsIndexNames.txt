@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\IIHT 2.0 (14-11-2022)\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\487829132.index
+\SpringCoreDemo\src\main\resources
+D:\IIHT 2.0 (14-11-2022)\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2538004665.index
+\SpringMVCDemo\src\main\resources
