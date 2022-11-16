@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">  
+        
+        <bean class="com.core.SpringCoreDemo.constructorinjection.Person" name="person1">
+       <constructor-arg value="Naga"/>
+       <constructor-arg value="10000"/>
+       <constructor-arg ref="person5"/>
+        </bean>
+        <bean class="com.core.SpringCoreDemo.constructorinjection.Person" name="person2">
+       <constructor-arg value="Sri"/>
+       <constructor-arg value="10001"/>
+       <constructor-arg ref="person5"/>
+        </bean>
+        <bean class="com.core.SpringCoreDemo.constructorinjection.Person" name="person3">
+       <constructor-arg value="Ram"/>
+       <constructor-arg value="10002"/>
+       <constructor-arg ref="person5"/>
+        </bean>
+        <bean class="com.core.SpringCoreDemo.constructorinjection.Certi" name="person5">
+        <constructor-arg value="Vuddagiri"/>
+        </bean>
+        
+       <bean class="com.core.SpringCoreDemo.constructorinjection.Person" name="person4" c:name="Gagan" c:personId="10003" c:certi="person5"/>
+        
+</beans>
