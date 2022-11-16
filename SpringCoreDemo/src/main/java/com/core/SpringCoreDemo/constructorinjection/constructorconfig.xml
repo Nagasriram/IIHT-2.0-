@@ -27,6 +27,10 @@
         <bean class="com.core.SpringCoreDemo.constructorinjection.Certi" name="person5">
         <constructor-arg value="Vuddagiri"/>
         </bean>
+        <bean class="com.core.SpringCoreDemo.constructorinjection.Addition" name="add1">
+        <constructor-arg value="1000" type="int"/>
+        <constructor-arg value="900" type="int"/>
+        </bean>
         
        <bean class="com.core.SpringCoreDemo.constructorinjection.Person" name="person4" c:name="Gagan" c:personId="10003" c:certi="person5"/>
         
